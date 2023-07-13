@@ -5,7 +5,7 @@ import { CountContext } from './CountProvider';
 function CountDisplay() {
 
     // this lets consume the context data!
-    const count = useContext(CountContext);
+    const { count } = useContext(CountContext);
 
     return(
         <div className="text-success">
